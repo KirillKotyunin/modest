@@ -1,0 +1,61 @@
+.welcome
+	width: 100%
+	background-color: #3a454d
+	background-size: cover
+	&-wrap
+		padding: rem(225px) 0 rem(252px) 0
+		position: relative
+		width: 100%
+
+
+.slider-item
+	outline: none
+	&__title
+		+fontTitle
+		text-transform: uppercase
+		font-size: rem(36px)
+		line-height: rem(30px)
+		color: #fff
+		margin-bottom: rem(30px)
+	&__descr
+		max-width: 55.3%
+		margin-bottom: rem(43px)
+		font-size: rem(16px)
+		color: #ccd0d7
+	&__button
+		margin-right: rem(15px)
+		transition: background-color .3s ease, border-color .3s ease
+		&:hover, &:focus
+			background-color: $accentColor
+			border-color: $accentColor
+
+.slick
+	&-slider 
+		position: static
+	&-dots
+		position: absolute
+		bottom: 0
+		right: 0
+		text-align: right
+		li 
+			width: 9px
+			height: 9px
+			margin: 0 0 rem(32px) rem(12px) 
+			button
+				width: 9px
+				height: 9px
+				&::before
+					content: ''
+					width: 9px
+					height: 9px
+					border: 2px solid #fff
+					border-radius: 50%
+					opacity: 1
+			&.slick-active 
+				button::before 
+					background-color: #fff
+					opacity: 1
+
+
+
+

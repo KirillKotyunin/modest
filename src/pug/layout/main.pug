@@ -1,0 +1,14 @@
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		link(href="css/main.css" rel="stylesheet")
+		title= pageTitle
+	body
+		include ../modules/header
+		block content
+
+		script(src="js/libs.min.js")
+		script(src="js/main.js")
+		

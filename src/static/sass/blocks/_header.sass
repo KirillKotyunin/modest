@@ -1,0 +1,49 @@
+.header 
+	background-color: #1d2126
+	&-wrap
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: rem(32px) 0
+	&-logo
+		outline: none
+		text-decoration: none
+		display: block
+		height: 100%
+		img 
+			height: 100%
+			display: block
+	&-nav
+		display: block
+		&__list
+			padding: 0
+			margin: 0
+			font-size: rem(14px)
+			line-height: rem(10px)
+			list-style-type: none
+			+fontSemibold
+		&__item
+			display: inline-block
+			margin-left: rem(26px)
+			border: 2px solid transparent
+			border-radius: 4px
+			transition: border-color .25s ease
+			&:hover
+				border-color: #5b6168
+			&_active
+				border-color: $accentColor
+				> a 
+					color: $accentColor
+				&:hover
+					border-color: #5b6168
+					> a 
+						color: #a4aead
+		&__link
+			text-decoration: none
+			color: #a4aead
+			display: block
+			text-decoration: none
+			outline: none
+			padding: rem(8px) rem(10px)
+			text-transform: uppercase
+			transition: color .25s ease
