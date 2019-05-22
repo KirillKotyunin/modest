@@ -1,0 +1,80 @@
+.team 
+	&-wrap 
+		padding: rem(80px) 0 rem(100px) 0
+
+.team-list
+	list-style-type: none
+	padding: 0
+	margin: 0
+	display: flex
+	justify-content: space-between
+
+.team-item
+	&__img
+		height: rem(300px)
+		width: rem(263px)
+	&__overlay
+		width: 100%
+		height: 100%
+		transition: background-color .25s ease 
+		background-color: transparent
+	&__descr
+		padding: rem(20px)
+		background-color: #e1e6ea
+		transition: background-color .25s ease
+	&__title
+		+fontTitle
+		text-transform: uppercase
+		color: #292f36
+		font-size: rem(16px)
+		margin-bottom: rem(9px)
+		line-height: rem(16px)
+		transition: color .25s ease
+	&__subtitle
+		color: #8d8f92
+		font-size: rem(14px)
+		line-height: rem(12px)
+		transition: color .25s ease
+	&__social-list
+		list-style-type: none
+		padding: 0
+		margin: 0
+		height: 100%
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+	&__social-item
+		background-color: #3a454d
+		width: rem(50px)
+		height: rem(50px)
+		text-align: center
+		line-height: rem(54px)
+		margin: 0 1px
+		transition: background-color .25s ease, transform .7s ease, opacity .5s ease
+		transform: translateY(-20px)
+		opacity: 0
+		&:hover 
+			background-color: #4e5a62
+	&__social-link
+		outline: none
+		text-decoration: none
+		display: block
+		width: 100%
+		height: 100%
+	&__social-icon
+		display: inline-block
+		height: rem(18px)
+	&:hover
+		.team-item__descr
+			background-color: #3a454d
+		.team-item__title
+			color: #fff
+		.team-item__subtitle
+			color: #fff
+		.team-item__social-item
+			opacity: 1
+			transform: translateY(0)
+		.team-item__overlay
+			background-color: rgba(#fff,.4)
+		
