@@ -1,0 +1,77 @@
+.contacts
+	&-wrap 
+		padding: rem(64px) 0 0 0
+
+.contacts-map
+	width: 100%
+	font-size: 0
+	img 
+		width: 100%
+		height: auto
+.contacts-block
+	display: flex
+	padding-top: rem(60px)
+.contacts-info
+	max-width: 45.72%
+.contacts-info-title
+	+fontTitle
+	font-size: rem(20px)
+	text-transform: uppercase
+	color: $titleColor
+	margin-bottom: rem(40px)
+.contacts-info-text
+	margin-bottom: rem(40px)
+	color: $textColor
+	font-size: rem(16px)
+	line-height: rem(26px)
+	&:last-child
+		margin-bottom: 0
+.contacts-form
+	max-width: rem(555px)
+	padding: rem(30px)
+	padding-bottom: rem(25px)
+	margin-left: rem(50px)
+	background-color: #fff
+	transform: translateY(-190px)
+	width: 100%
+	label
+		+fontTitle
+		color: $textColor
+		font-size: rem(14px)
+		text-transform: uppercase
+		display: block
+		margin-bottom: rem(10px)
+.contacts-form-group
+	margin-bottom: rem(30px)
+	width: 100%
+	max-width: rem(240px)
+.contacts-form-input
+	border: none
+	outline: none
+	background-color: #eaeef1
+	color: $textColor
+	height: 44px
+	border-radius: 3px
+	width: 100%
+	padding-left: rem(12px)
+.contacts-form-textarea
+	display: block
+	resize: none 
+	border: none
+	outline: none
+	background-color: #eaeef1
+	color: $textColor
+	border-radius: 3px
+	width: 100%
+	height: 160px
+	padding: rem(12px)
+	margin-bottom: rem(32px)
+.contacts-form-button
+	+fontTitle
+	font-size: rem(14px)
+	background-color: $accentColor
+	border: none
+	text-transform: uppercase
+	transition: background-color .25s ease
+	&:hover, &:focus
+		background-color: darken($accentColor, 7%)
