@@ -16,13 +16,13 @@
 
 <h2>Gulp intallation:</h2>
 After downloading the directory, open "Git Bash" and write command:
-<br>
+
 ```bash
 npm i
 ```
-<br>
+
 After downlaoding, run gulp:
-<br>
+
 ```bash
 gulp
 ```
