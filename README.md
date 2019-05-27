@@ -1,10 +1,26 @@
 # Modest Template
 Internship work in MadDevs
 
+- HTML (PUG)
+- CSS (SASS)
+- JS (jQuery)
+- Libs (slick-slider,normalize)
+
+<h2>Project structure:</h2>
+<ul>
+	<li><strong>"Dist" folder</strong>: contains a finished project</li>
+	<li><strong>"Src" folder</strong>: contains files for web development
+		<ul>
+			<li><strong>"Pug" folder</strong>: contains gulp files</li>
+			<li><strong>"Static" folder</strong>: contains other files for development (js,sass)</li>
+		</ul>
+	</li>
+</ul>
+
 <h2>Gulp tasks:</h2>
 
 <ul>
-	<li><strong>Gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development;</li>
+	<li><strong>Gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development</li>
 	<li><strong>PUG</strong></li>
 	<li><strong>Sass</strong></li>
 	<li><strong>Csso</strong></li>
