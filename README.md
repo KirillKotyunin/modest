@@ -16,6 +16,7 @@
 
 <h2>Gulp intallation:</h2>
 After downloading the directory, open "Git Bash" and write:
+
 ```bash
 npm i
 ```
