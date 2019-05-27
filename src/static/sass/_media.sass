@@ -1,0 +1,191 @@
+@import 'vars'
+
+
+@media screen and (max-width: $breakpoint-xl)
+	.container 
+		max-width: $container-lg
+
+	.about-block
+		.about-info
+			max-width: 52%
+		.about-steps
+			max-width: 100%
+			&__content
+				max-width: rem(340px)
+
+	.team-list
+		justify-content: start
+		.team-item
+			width: 33.33%
+			padding: 0 rem(15px)
+
+	.work-list
+		justify-content: space-between
+		.work-item
+			width: 48%
+
+	.services-list
+		justify-content: flex-start
+		.services-item
+			width: 33.33%
+			max-width: 100%
+			padding: 0 rem(15px)
+
+	.features-list
+		justify-content: flex-start
+		.features-item
+			max-width: 100%
+			width: 33.33%
+			padding: 0 rem(15px)
+
+	.contacts-form
+		transform: translateY(-130px)
+		&-group
+			max-width: rem(200px)
+
+@media screen and (max-width: $breakpoint-lg)
+	html 
+		font-size: 14px
+	.container 
+		max-width: $container-md
+	.header-nav__item
+		margin-left: rem(10px)
+
+	.about-block
+		.about-info
+			max-width: 52%
+		.about-steps
+			max-width: 100%
+			&__content
+				max-width: rem(280px)
+	.team-list
+		.team-item
+			padding: 0 rem(10px)
+	.services-list
+		.services-item
+			margin-bottom: rem(60px)
+			padding: 0 rem(10px)
+	.features-list
+		justify-content: space-between
+		.features-item
+			padding: 0
+			width: 48%
+			max-width: 100%
+	.contacts-form
+		transform: translateY(-120px)
+		.d-flex.space-between
+			flex-flow: column wrap
+		&-group
+			max-width: 100%
+			width: 100%
+
+	
+
+@media screen and (max-width: $breakpoint-md)
+	.container 
+		max-width: $container-sm
+	.mobile-menu-btn
+		display: block
+	.header-nav
+		width: 100%
+		margin-top: rem(25px)
+		display: none
+		&__item
+			margin: 0
+			width: 100%
+			display: block
+			margin-bottom: rem(5px)
+		&__link
+			padding: rem(18px) rem(10px)
+
+	.slider-item
+		&__descr
+			max-width: 100%
+
+	.slick-dots
+		text-align: center
+		li 
+			width: 6px
+			height: 6px
+			button
+				width: 6px
+				height: 6px
+				&::before
+					width: 6px
+					height: 6px
+
+	.about-block
+		flex-flow: column wrap
+		.about-info
+			max-width: 100%
+		.about-steps
+			max-width: 100%
+			margin: 0
+			margin-top: rem(40px)
+			&__content
+				max-width: 86%
+	.team-list
+		justify-content: space-between
+		.team-item
+			max-width: 48%
+			width: 48%
+			padding: 0
+	
+	.services-list
+		justify-content: space-between
+		.services-item
+			max-width: 48%
+			width: 48%
+			padding: 0
+
+	.contacts-block
+		flex-flow: column wrap
+		padding: rem(64px) 0 rem(98px) 0
+		.contacts-info
+			max-width: 100%
+		.contacts-form
+			transform: translateY(0)
+			max-width: 100%
+			margin: 0
+			padding: 0
+			margin-top: rem(40px)
+
+@media screen and (max-width: $breakpoint-sm)
+	html
+		font-size: 12px
+	.container 
+		max-width: 100%
+		padding: 0 rem(15px)
+
+	.footer-wrap
+		flex-flow: column wrap 
+		justify-content: center
+		align-items: center
+		.footer-copy
+			margin-bottom: rem(20px)
+
+@media screen and (max-width: $breakpoint-xs)
+	.team-list, .work-list, .services-list, .features-list
+		flex-flow: column wrap 
+		justify-content: center 
+		align-items: center
+	.team-list
+		.team-item
+			max-width: 100%
+			width: 80%
+			&__img
+				height: rem(380px)
+				background-position: top center!important
+	.work-list
+		.work-item
+			max-width: 100%
+			width: 100%
+			height: rem(290px)
+	.services-list
+		.services-item
+			max-width: 100%
+			width: 100%
+	.features-list
+		.features-item
+			max-width: 100%
+			width: 100%

@@ -1,10 +1,12 @@
 .header 
 	background-color: #1d2126
+	position: relative
 	&-wrap
 		display: flex
 		align-items: center
 		justify-content: space-between
 		padding: rem(32px) 0
+		flex-flow: wrap
 	&-logo
 		outline: none
 		text-decoration: none
@@ -47,3 +49,43 @@
 			padding: rem(8px) rem(10px)
 			text-transform: uppercase
 			transition: color .25s ease
+
+.mobile-menu-btn
+	border: none
+	background-color: transparent
+	cursor: pointer
+	width: 40px
+	height: 40px
+	outline: none
+	display: none
+	span 
+		margin: 0 auto
+		display: block
+		background-color: #fff
+		height: 2px
+		width: 30px
+		position: relative
+		&::before, &:after
+			content: ''
+			display: block
+			background-color: #fff
+			width: 30px
+			height: 2px
+			position: absolute
+			transition: all .25s ease
+		&::before 
+			top: -8px
+			left: 0
+		&::after
+			top: 8px
+			left: 0
+
+.mobile-menu-btn.is-active
+	span 
+		background-color: transparent
+		&::before, &::after
+			top: 0
+		&::before 
+			transform: rotate(45deg)
+		&::after 
+			transform: rotate(-45deg)
