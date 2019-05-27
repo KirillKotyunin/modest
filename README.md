@@ -2,6 +2,11 @@
 
 <h2>Gulp tasks:</h2>
 
+After downloading the directory, open "Git Bash" and write:
+```bash
+npm i
+```
+
 <ul>
 	<li><strong>Gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development;</li>
 	<li><strong>PUG</strong></li>
@@ -13,3 +18,6 @@
 	<li><strong>Concat</strong></li>
 	<li><strong>browserSync</strong></li>
 </ul>
+
+<h2>Gulp intallation:</h2>
+
